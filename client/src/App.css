@@ -1,0 +1,375 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* HOME */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.home-page{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page .home-div{
+  text-align: center;
+  font-weight: bolder;
+}
+
+.home-page .home-div span{
+  color: rgb(108,99,255);
+}
+
+
+
+/* NAVBAR */
+.navbar{
+  padding: 10px 50px !important;
+  margin: auto;
+}
+
+.navbar-brand img{
+  width: 50px;
+  background-color: navy;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.navbar-toggler{
+  margin-right: 10px;
+}
+
+.navbar-nav{
+  margin-left: auto;
+}
+
+.navbar-nav li{
+  margin: 0px 10px;
+}
+
+
+/* PROFILE */
+.profile-container{
+  width: 50%;
+  margin: 10vh auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container .row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-container .row img{
+  width: 250px;
+  border-radius: 50%;
+}
+
+.profile-head{
+  position: relative;
+}
+
+.profile-edit-btn{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.profile-title{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.user-data-label{
+  font-weight: bolder;
+}
+
+.user-data{
+  color: blue;
+}
+
+@media only screen and (max-width: 1500px) {
+  .profile-container{
+    min-width: 80%;
+    padding: 10px;
+  }
+
+  .profile-container #row{
+    flex-direction: column;
+  }
+
+  .profile-container #row img{
+    margin-bottom: 30px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile-container{
+    min-width: 90%;
+  }
+}
+
+
+
+/* REGISTER AND LOGIN */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-content, .login-content{
+  max-width: 80%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px 120px;
+}
+
+.signup-form, .signin-form{
+  height: 70%;
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form h2, .signin-form h2{
+  margin-bottom: 20px;
+}
+
+.signup-form input, .signin-form input{
+  border: none;
+  border-bottom: 1px groove rgba(129, 129, 129, 0.253);
+  margin: 10px 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.zmdi{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.btn{
+  margin-top: 20px;
+}
+
+.btn button{
+  font-size: 18px;
+  color: white;
+  border: none;
+  background-color: rgb(108,99,255);
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.register-image, .login-image{
+  height: 70%;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register-image img, .login-image img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border-radius: 10px;
+}
+
+.register-image figure, .login-image figure{
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-image span, .login-image span{
+  margin-top: 20px;
+}
+
+.registered, .logged{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.registered:hover, .logged:hover{
+  color: rgb(108,99,255);
+}
+
+@media only screen and (max-width: 1400px) {
+  .register-content, .login-content{
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .signup-form, .signin-form{
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .register-content, .login-content{
+    min-width: 95%;
+  }
+}
+
+
+
+/* CONTACT */
+.item-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-info-item{
+  min-width: 300px;
+  margin: 40px 10px;
+  padding: 20px 20px;
+  border: 0.5px groove rgba(129, 129, 129, 0.253);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(248,249,250);
+}
+
+.contact-info-item .zmdi{
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.contact-form-container{
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: rgb(248,249,250);
+}
+
+.contact-form-container h2{
+  margin-bottom: 30px;
+}
+
+.contact-form-container .input{
+  width: 100%;
+  border: 0.5px groove rgba(129, 129, 129, 0.253);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0px;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-form-container{
+    max-width: 90%;
+  }
+}
+
+
+/* 404 PAGE */
+
+.page-404 {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+}
+
+.page-404 img {
+  width: 100%;
+}
+
+.four-zero-four-bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.four-zero-four-bg h1 {
+  font-size: 80px;
+}
+
+.four-zero-four-bg h3 {
+  font-size: 80px;
+}
+
+.link-404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: rgb(108,99,255);
+  border-radius: 10px;
+  margin: 20px 0;
+  display: inline-block;
+}
