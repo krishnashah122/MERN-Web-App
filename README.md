@@ -2,7 +2,7 @@
 
 ![home](https://github.com/krishnashah122/MERN-Web-App/assets/64410232/06cc2e7f-157c-47c1-a369-87fe307b3e77)
 
-A full-stack web application built to learn the fundamentals of the MERN (MongoDB, Express.js, React, Node.js) stack. This project includes user registration, login, and authentication functionality, as well as a user dashboard to display user details after login.
+A full-stack web application built to learn the fundamentals of the MERN (MongoDB, Express.js, React, Node.js) stack. This project includes user registration, login, and authentication with webpage protection functionality, as well as a user dashboard to display user details after login.
 
 ## Features
 
